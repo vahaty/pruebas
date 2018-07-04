@@ -1,0 +1,19 @@
+<app-nav></app-nav>
+
+<!-- [mapTypeId]="' hybrid
+                  roadmap
+                  satellite
+                  terrain'"
+ -->
+
+<button (click)="cambio('terrain')"> Mapa</button>
+<button (click)="cambio('satellite')">Satelite</button>
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="17" [mapTypeId]="tipoMapa" [zoomControl]="true">
+  <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true"></agm-marker>
+
+
+  <!-- <agm-direction [origin]="origin" [destination]="destination"></agm-direction> -->
+
+</agm-map>
+
+
