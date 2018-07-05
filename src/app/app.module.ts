@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -20,8 +20,10 @@ import { AgmDirectionModule } from 'agm-direction';
     CommonModule,
     FormsModule,
     AgmDirectionModule,
+    ReactiveFormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAHPLi3A0LbcUy8vOSee0KBprfmhLeTPUs'
+      apiKey: 'AIzaSyAHPLi3A0LbcUy8vOSee0KBprfmhLeTPUs',
+      libraries: ['places']
     })
   ],
   providers: [],

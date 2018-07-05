@@ -1,3 +1,39 @@
-agm-map {
-    height: 500px;
-}
+ agm-map {
+     height: 600px;
+ }
+
+ button agm-map {
+     height: 100px;
+ }
+
+ label.btn.btn-secondary:hover {
+     background-color: rgba(114, 110, 110, 0.54);
+ }
+
+ label.btn.btn-secondary.active {
+     font-weight: bold;
+ }
+
+ .botonesMap {
+     margin-top: 5px;
+     margin-left: 5px;
+     position: absolute;
+     z-index: 1;
+     background-color: white;
+ }
+
+ .jumbotron {
+     background-color: transparent;
+ }
+
+ button.mapa {
+     left: 125px;
+     top: 660px;
+     height: 100px;
+     width: 100px;
+     position: absolute;
+     z-index: 1;
+     background: transparent;
+     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+     bottom: 0;
+ }
