@@ -8,16 +8,6 @@
 
 <div class="jumbotron">
   <div class="container">
-    <div class="form-group">
-      <input placeholder="search for location" autocorrect="on" autocapitalize="on" spellcheck="on" type="text" class="form-control"
-        #search [formControl]="searchControl">
-
-
-    </div>
-    <div class="form-group">
-      <button type="button" (click)="comoLlegar()">Como Llegar</button>
-    </div>
-
     <div class="btn-group btn-group-toggle botonesMap" data-toggle="buttons">
       <label class="btn btn-secondary active" (click)="cambio('roadmap')">
         <input type="radio" name="options" autocomplete="off" checked> Mapa
@@ -29,44 +19,8 @@
     </div>
 
     <!-- mapa -->
-    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [zoomControl]="true" [mapTypeId]="tipoMapa" [fullscreenControl]="true">
-      <!-- <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"></agm-marker> -->
-      <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true"></agm-marker>
-
-      <agm-direction ng-if="llegarView" [origin]="origin" [destination]="destination"></agm-direction>
+    <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" [zoomControl]="true" [mapTypeId]="tipoMapa" [fullscreenControl]="true">
+      <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"></agm-marker>
     </agm-map>
-    <!-- mini mapa -->
-    <div class="form-group">
-      <button type="button" class="mapa" (click)="cambio(minMap)">
-        <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" [mapTypeId]="minMap" [zoomControl]="false" [streetViewControl]="false">
-        </agm-map>
-      </button>
-    </div>
   </div>
-
-
-  <!-- 
-  <div class="container">
-    <div class="btn-group btn-group-toggle botonesMap" data-toggle="buttons">
-      <label class="btn btn-secondary active" (click)="cambio('terrain')">
-        <input type="radio" name="options" autocomplete="off" checked> Mapa
-      </label>
-      <label class="btn btn-secondary" (click)="cambio('satellite')">
-        <input type="radio" name="options" autocomplete="off"> Satelite
-      </label>
-
-    </div> -->
-
-  <!-- mapa -->
-  <!-- <agm-map [latitude]="lat" [longitude]="lng" [zoom]="17" [mapTypeId]="tipoMapa" [zoomControl]="true" [fullscreenControl]="true">
-      <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true"></agm-marker> -->
-  <!-- <agm-direction [origin]="origin" [destination]="destination"></agm-direction> -->
-  <!-- </agm-map> -->
-
-  <!-- mini mapa -->
-  <!-- <button type="button" class="mapa" (click)="cambio(minMap)">
-      <agm-map [latitude]="lat" [longitude]="lng" [zoom]="17" [mapTypeId]="minMap" [zoomControl]="false" [streetViewControl]="false">
-      </agm-map>
-    </button>
-  </div> -->
 </div>
