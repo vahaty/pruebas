@@ -9,11 +9,13 @@ import { NavComponent } from './nav/nav.component';
 
 import { AgmCoreModule } from '@agm/core';
 import { AgmDirectionModule } from 'agm-direction';
+import { MarcasComponent } from './marcas/marcas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    MarcasComponent
   ],
   imports: [
     BrowserModule,
