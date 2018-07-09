@@ -3,22 +3,109 @@
 <router-outlet></router-outlet>
 
 
-  
+
 <div class="jumbotron">
-    <div class="container">
-      <div class="btn-group btn-group-toggle botonesMap" data-toggle="buttons">
-        <label class="btn btn-secondary active" (click)="cambio('roadmap')">
-          <input type="radio" name="options" autocomplete="off" checked> Mapa
-        </label>
-        <label class="btn btn-secondary" (click)="cambio('satellite')">
-          <input type="radio" name="options" autocomplete="off"> Satelite
-        </label>
-  
-      </div>
-  
-      <!-- mapa -->
-      <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" [zoomControl]="true" [mapTypeId]="tipoMapa" [fullscreenControl]="true">
-        <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"></agm-marker>
-      </agm-map>
+  <div class="container">
+    <div class="btn-group btn-group-toggle botonesMap" data-toggle="buttons">
+      <label class="btn btn-secondary active" (click)="cambio('roadmap')">
+        <input type="radio" name="options" autocomplete="off" checked> Mapa
+      </label>
+      <label class="btn btn-secondary" (click)="cambio('satellite')">
+        <input type="radio" name="options" autocomplete="off"> Satelite
+      </label>
+
     </div>
+
+    <!-- mapa -->
+    <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" [zoomControl]="true" [mapTypeId]="tipoMapa" [fullscreenControl]="true">
+      <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"></agm-marker>
+    </agm-map>
   </div>
+</div>
+
+
+<footer class="footer footer-home">
+  <!-- <div class="content-info"> -->
+  <div class="content">
+
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="../assets/chatbubble.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Contacta con nosotros</h5>
+          <p class="foot-telephone">Telf:&nbsp;
+            <a href="tel:91.473.98.41" target="_blank" title="teléfono" data-track="conversion.adwords:968745065,1111111111111111111,30|resoli:https://stats.qdq.com/log/product/623012820?_=8796edc1bf&amp;v=click_to_call&amp;h=d9436d085d31f2ea58361a1dc42ce792238de9d5&amp;__AddUtmData__|analytics.ma:contact,click_to_call,conv|conversion.adwordsNg:click_to_call|">
+              <span>91 473 98 41</span>
+            </a>
+          </p>
+          <p class="foot-telephone">Telf:&nbsp;
+            <a href="tel:685.08.13.38" target="_blank" title="teléfono" data-track="conversion.adwords:968745065,1111111111111111111,30|resoli:https://stats.qdq.com/log/product/623012820?_=8796edc1bf&amp;v=click_to_call&amp;h=d9436d085d31f2ea58361a1dc42ce792238de9d5&amp;__AddUtmData__|analytics.ma:contact,click_to_call,conv|conversion.adwordsNg:click_to_call|">
+              <span>685 08 13 38</span>
+            </a>
+          </p>
+
+
+          <a class="mailto" href="#" data-mlink-name="orlivsusej" data-mlink-domain="hotmail.com" data-mlink-subject="Contacto desde tu web de QDQ"
+            data-track="conversion.adwords:968745065,1010101010101010,30|resoli:https://stats.qdq.com/log/product/623012820?_=d0120eda67&amp;v=mailto&amp;h=cac6ff147536892155c4bdcb9a4c52d627b607a9&amp;__AddUtmData__|analytics.ma:contact,mailto,qpc|conversion.adwordsNg:mailto|"
+            data-manual-track="mailto_copy" style="display: none;">Mándanos un mail</a>
+          <div class="mail-send">
+            <a class="mailto" href="#" data-mlink-name="orlivsusej" data-mlink-domain="hotmail.com" data-mlink-subject="Contacto desde tu web de QDQ"
+              data-track="conversion.adwords:968745065,1010101010101010,30|resoli:https://stats.qdq.com/log/product/623012820?_=d0120eda67&amp;v=mailto&amp;h=cac6ff147536892155c4bdcb9a4c52d627b607a9&amp;__AddUtmData__|analytics.ma:contact,mailto,qpc|conversion.adwordsNg:mailto|"
+              data-manual-track="mailto_copy">Mándanos un mail
+              <span class="copy-suggestion">haz clic para copiar mail</span>
+            </a>
+            <div class="copy-tooltip-wrapper">
+              <div class="copy-tooltip">
+                <i class="ion ion-checkmark-circled"></i>
+                <div class="copy-message">
+                  <span class="copy-done">mail copiado</span>
+                  <span class="copy-mail"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4">
+      <div class="card">
+
+        <img class="card-img-top" src="../assets/location.png" alt="Card image cap">
+        <div class="card-body">
+          <!-- <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          <h4 class="upper title">Dónde estamos</h4>
+          <p class="foot-address">
+            <span class="address-street"> Calle Fernando Poo, 18 </span>
+            <span class="address-postal-code"> 28045 </span>
+            <span class="address-locality"> Madrid </span>
+          </p>
+          <a class="link-theme" href="/es/contacto/">Ver otras direcciones</a>
+          <div class="social-data" data-website-social-data=""></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="../assets/reloj.png" alt="Card image cap">
+        <div class="card-body">
+          <!-- <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a> -->
+
+          <h4 class="upper title">Horarios</h4>
+          <div class="tab-desc">
+            <div class="opening-hours">
+              <p>De 9 a 14 y de 16 a 20 horas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

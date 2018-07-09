@@ -11,6 +11,7 @@ export class PrincipalComponent implements OnInit {
   public selectedValue: any;
   public altura: any;
   public diametro: any;
+  public anchura: any;
   constructor() { }
 
   ngOnInit() {
@@ -27,7 +28,7 @@ export class PrincipalComponent implements OnInit {
     { value: 21 },
     { value: 22 },
     { value: 34 },
-    { value: 37 }]
+    { value: 37 }];
 
     this.altura = [{ value: 25 },
     { value: 30 },
@@ -103,7 +104,7 @@ export class PrincipalComponent implements OnInit {
     { value: 371 },
     { value: 385 },
     { value: 445 },
-    { value: 750 }]
+    { value: 750 }];
   }
 
 }
