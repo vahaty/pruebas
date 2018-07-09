@@ -1,0 +1,65 @@
+
+
+<div class="row">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-head">ENCUENTRA TUS NEUMÁTICOS</div>
+            <div class="card-body ">
+              <div class="row" style="margin-left: 15px;">
+                <div class="col-md-2">
+                  <div class="input-group">
+                    <label>Anchura*</label>
+                    <select [(ngModel)]="selectedValue" class="form-control">
+                      <option *ngFor="let c of anchura" [ngValue]="c">{{c.value}}</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="input-group">
+                    <label>Altura*</label>
+                    <select [(ngModel)]="selectedValue" class="form-control">
+                      <option *ngFor="let c of altura" [ngValue]="c">{{c.value}}</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="input-group">
+                    <label>Diámetro*</label>
+                    <select [(ngModel)]="selectedValue" class="form-control">
+                      <option *ngFor="let c of diametro" [ngValue]="c">{{c.value}}</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <img src="../assets/neumatico.webp" alt="Card image cap"/>
+                <button  class="btn btn-primary  btn-lg btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="width: 55%;">
+                  Buscar neumáticos
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <hr class="my-4">
+  
+  
+  <div class="row">
+    <div class="jumbotron">
+      <div class="container">
+        <app-marcas></app-marcas>
+      </div>
+    </div>
+  </div>
+  
+  
+  <hr class="my-4">
+  
+  

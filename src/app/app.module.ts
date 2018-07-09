@@ -10,14 +10,29 @@ import { NavComponent } from './nav/nav.component';
 import { AgmCoreModule } from '@agm/core';
 import { AgmDirectionModule } from 'agm-direction';
 import { MarcasComponent } from './marcas/marcas.component';
+import { QuienSomosComponent } from './quien-somos/quien-somos.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { RouterModule, Routes } from '@angular/router';
+import { PrincipalComponent } from './principal/principal.component';
+
+const appRoutes: Routes = [
+  { path: '', component: PrincipalComponent },
+  { path: 'nosotros', component: QuienSomosComponent },
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    MarcasComponent
+    MarcasComponent,
+    QuienSomosComponent,
+    PrincipalComponent
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    ),
     BrowserModule,
     CommonModule,
     FormsModule,
@@ -26,7 +41,8 @@ import { MarcasComponent } from './marcas/marcas.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAHPLi3A0LbcUy8vOSee0KBprfmhLeTPUs',
       libraries: ['places']
-    })
+    }),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
