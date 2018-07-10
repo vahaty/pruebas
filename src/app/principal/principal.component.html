@@ -46,12 +46,14 @@
       <div class="col-md-4"></div>
       <div class="col-md-6">
         <div class="card">
-          <div class="card-head">ENCUENTRA TUS NEUMÁTICOS</div>
+          <div class="card-head">
+            <h3>ENCUENTRA TUS NEUMÁTICOS</h3>
+          </div>
           <div class="card-body ">
             <div class="row" style="margin-left: 15px;">
               <div class="col-md-2">
                 <div class="input-group">
-                  <label>Anchura*</label>
+                  <label>Anchura* </label>
                   <select [(ngModel)]="anc" class="form-control">
                     <option *ngFor="let c of anchura" [ngValue]="c">{{c.value}}</option>
                   </select>
@@ -59,7 +61,7 @@
               </div>
               <div class="col-md-2">
                 <div class="input-group">
-                  <label>Altura*</label>
+                  <label> Altura* </label>
                   <select [(ngModel)]="alt" class="form-control">
                     <option *ngFor="let c of altura" [ngValue]="c">{{c.value}}</option>
                   </select>

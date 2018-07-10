@@ -14,10 +14,13 @@ import { QuienSomosComponent } from './quien-somos/quien-somos.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { PrincipalComponent } from './principal/principal.component';
+import { FooterComponent } from './footer/footer.component';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 const appRoutes: Routes = [
   { path: '', component: PrincipalComponent },
   { path: 'nosotros', component: QuienSomosComponent },
+  { path: 'galeria', component: GaleriaComponent },
 ];
 
 @NgModule({
@@ -26,7 +29,9 @@ const appRoutes: Routes = [
     NavComponent,
     MarcasComponent,
     QuienSomosComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    FooterComponent,
+    GaleriaComponent
   ],
   imports: [
     RouterModule.forRoot(

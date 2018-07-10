@@ -1,3 +1,29 @@
-.text{
+.text {
     text-align: justify;
+}
+
+.card2 {
+    width: 30%;
+    float: right;
+}
+
+.nosotros2 {
+    float: right;
+}
+
+.gallery-title {
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    left: 35.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
 }
