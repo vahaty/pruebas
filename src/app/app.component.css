@@ -5,7 +5,24 @@
  button agm-map {
      height: 100px;
  }
- 
+
+ #u3171 {
+     width: 150px;
+     height: 150px;
+ }
+
+ #u3171 {
+     border-style: none;
+     border-color: transparent;
+     position: relative;
+     background: transparent url("../assets/fb.png") no-repeat left top;
+     background-size: contain !important;
+ }
+
+ #u3171:hover {
+     background: transparent url("../assets/fb-on.png") no-repeat left top;
+     background-size: contain !important;
+ }
 
  label.btn.btn-secondary:hover {
      background-color: rgba(114, 110, 110, 0.54);
