@@ -3,3 +3,56 @@ label {
     font-family: monospace;
 }
 
+.soni {
+    background: url('../../assets/neumatico-ecologico.jpg') no-repeat center center;
+}
+
+.gallery-title {
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+/* .carousel-indicators {
+    bottom: -16%;
+}
+*/
+
+.glyphicon-chevron-left:before {
+    color: #42B32F;
+}
+
+.glyphicon-chevron-right:before {
+    color: #42B32F;
+}
+
+.carousel-indicators .active {
+    background-color: #42B32F;
+}
+
+.carousel-indicators li {
+    border: 1px solid green;
+}
+
+.carousel-control.left {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .0001) 100%);
+}
+
+.carousel-control.right {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .1) 100%);
+}
+
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    left: 35.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+img {
+    margin: auto;
+}

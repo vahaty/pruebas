@@ -1,70 +1,46 @@
-<!-- <div class="jumbotron">
-  <div class="container">
-    <h3 class="display-4">LAS MEJORES MARCAS DE NEUMÁTICOS</h3>
-    <hr class="my-4">
-    <div class="card-group">
-      <div class="container">
-        <div class="card">
-          <img class="card-img-top" src="../../assets/michelin.png" alt="Card image cap">
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="../../assets/federal.gif" alt="Card image cap">
-          <img class="card-img-top" src="../../assets/silverstone.gif" alt="Card image cap">
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-<h3 class="display-4" style="text-align: center;">LAS MEJORES MARCAS DE NEUMÁTICOS</h3>
-<!-- <hr class="my-4"> -->
 <div class="jumbotron">
   <div class="container">
-
     <div class="row">
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <img class="card-img-top" src="../../assets/firestone.png" alt="Card image cap" style="width: 80%;">
-          </div>
-        </div>
+      <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h1 class="gallery-title">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVRSURBVGhDxdoH6G9jHMfxv70zo8xsce2VETJC2StcssmWFSU7lLLHtcsWWRG6uCKkjIyMkpkte+/3W/epp8f3rN85/+tTr7r9f895zvn9zjnPvGM9swfux2f4u8G3uBNT8MHUv+ktXI2N8b9kRryO/GJL3+ApHIHD8TGicvoVs2GaZCOcidNwFPbG9cgv6GVcgeMwM8zS+A15uchVuAAbYtyyL/5CdAGl77E7VsMj+BxRuSp/4HiMS95FdNLSK5iATeF7EZVpyzs/eFbC04hO+A7OhmVSbkJUtos3MHjmxKJ4COlEH+EArIr5YXwvFsOnyC9qFD7KB8Fz98p1iE4Q2QfmFnyHqMyo/FHmxUjZHlGlkUcxHXbJ/tbEL+sd/T37W51zMVJeRFRhyRZqScyOvKOL/Inb4aOYMhcOwYeIjkl+wiLoFJ/zqLKSF5YeqcMQlUm8A5uhKnaG9yI6NjkfneOj9SaiCn0cbkP+y26DqKy8a2uiKTPAeqM6ZMs4UnxcbkBe2bWwVSpzM/Jyuf3QNnOg6ge8Fa2zFC7EPXgWdoR5j/7VVHfATI/JqOr1HVR2zdqI6vM9af2jlHegil/U1LVUXkz++HWJ9Ud1+mVmQW1mhc9zVEFpBxh/8ehzjXI3UtZCVKfqGo1/swmiA0tfIo1sv0BURjuhT15DVO/pqI3teXRg6VKYJRB9rh9hY9EnZyCq+wHUxs7Ji7R/iCqQk6mFYRwDVY2K+zxWKb70Ud0voVXWR9QE2vTmv7It1icoy+lU9I2PbzQha3y0UhaAL1Q+F/d2bot1keJsLj9BLjUGfeOMs6zb81bGFsv5xtcoD8zZq1vW+NJHZbQshohjs7Lu55GmDf+Js7rygIjTUBceTPR54l0dIpcjqn9/hFkZ0QEle/WU6PNkJgyRcxDVfyjCtP0i7yMl+ly/YKichOgclV/EPqFqvJTLv8hziMrIFm2IuPwU1V/5RcwxcCwTHZj48qWsgaiMRp6aFrkYUf0HojZ2dpMQTUGvRD5gWwVlmcRZ4xC5EVH9rYc/GyBfWLsPm2NFpDhXzyvPbYEh8gyi+u20K7MXnFtU9dbyPVoBJmrjkyFWCn3PfkBZtx2iix2VqVqAK7nWZM5C9LlcoOsbO9Wo7gVRm7sRHVi6BGZHRJ/L4Y1z8D45GmW9rvA39lFVw+aS4x+zEKLPk757Hk8gqncr1Mbl/DYLZr4nKbbnURnZ+o2axVE1nVgGjVkel8FbGFUiT5DnSUTlfkaau3SN1xDV6UJepzjvsNN5FXlFXtyuSHHO8ALyMrmL0DWuKFZ1zA4iW8fR7XLYEqcgH9o7LzkYLsvMB5tBl//zk+UcLde2+UWsL1/xL3Wpq3J8U7KTNFHrknM6XDl/KHIiojrcY+zcyW6NqLKSL73zalcH6zY65V2LVijzONKtGrheg86xR23asU1cjUxbCk2r8Y4Y3OFNS0kpTuq8u9ExyXkYKeugfNGrpC03f/Gm0bNcC3sQ7ru7fVG3apPshl5xXHUkHka0ouHyURr32Ei03TTtwjl67diqbRyuuy2wJ9y1TSd4G95ynQDXuU5GfhF9+ZK7zd07bsA4dY1OUnoMvvgu/0efd+V+5M4YLF1+5ccxD+wIvWNRmTYciQ/yOJU5FrZQTS2TfMzM3GjzH24inXrwUePjszp8Z1xGzQeaLl7bOLj/7uBuIlxCyi+yidPbxj2QIeI02PfhPdStvNjKuSW3HWxuozKJj5KzU2ep0yxOmNwsdcW9Tb8hL/QuRB2tL/W4vA9d4iPgaNVO0QGdCxR1/M82Trj893pwPa3nTHJs7B+IIHrNmOoaoQAAAABJRU5ErkJggg=="> LAS MEJORES MARCAS DE NEUMÁTICOS
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVRSURBVGhDxdoH6G9jHMfxv70zo8xsce2VETJC2StcssmWFSU7lLLHtcsWWRG6uCKkjIyMkpkte+/3W/epp8f3rN85/+tTr7r9f895zvn9zjnPvGM9swfux2f4u8G3uBNT8MHUv+ktXI2N8b9kRryO/GJL3+ApHIHD8TGicvoVs2GaZCOcidNwFPbG9cgv6GVcgeMwM8zS+A15uchVuAAbYtyyL/5CdAGl77E7VsMj+BxRuSp/4HiMS95FdNLSK5iATeF7EZVpyzs/eFbC04hO+A7OhmVSbkJUtos3MHjmxKJ4COlEH+EArIr5YXwvFsOnyC9qFD7KB8Fz98p1iE4Q2QfmFnyHqMyo/FHmxUjZHlGlkUcxHXbJ/tbEL+sd/T37W51zMVJeRFRhyRZqScyOvKOL/Inb4aOYMhcOwYeIjkl+wiLoFJ/zqLKSF5YeqcMQlUm8A5uhKnaG9yI6NjkfneOj9SaiCn0cbkP+y26DqKy8a2uiKTPAeqM6ZMs4UnxcbkBe2bWwVSpzM/Jyuf3QNnOg6ge8Fa2zFC7EPXgWdoR5j/7VVHfATI/JqOr1HVR2zdqI6vM9af2jlHegil/U1LVUXkz++HWJ9Ud1+mVmQW1mhc9zVEFpBxh/8ehzjXI3UtZCVKfqGo1/swmiA0tfIo1sv0BURjuhT15DVO/pqI3teXRg6VKYJRB9rh9hY9EnZyCq+wHUxs7Ji7R/iCqQk6mFYRwDVY2K+zxWKb70Ud0voVXWR9QE2vTmv7It1icoy+lU9I2PbzQha3y0UhaAL1Q+F/d2bot1keJsLj9BLjUGfeOMs6zb81bGFsv5xtcoD8zZq1vW+NJHZbQshohjs7Lu55GmDf+Js7rygIjTUBceTPR54l0dIpcjqn9/hFkZ0QEle/WU6PNkJgyRcxDVfyjCtP0i7yMl+ly/YKichOgclV/EPqFqvJTLv8hziMrIFm2IuPwU1V/5RcwxcCwTHZj48qWsgaiMRp6aFrkYUf0HojZ2dpMQTUGvRD5gWwVlmcRZ4xC5EVH9rYc/GyBfWLsPm2NFpDhXzyvPbYEh8gyi+u20K7MXnFtU9dbyPVoBJmrjkyFWCn3PfkBZtx2iix2VqVqAK7nWZM5C9LlcoOsbO9Wo7gVRm7sRHVi6BGZHRJ/L4Y1z8D45GmW9rvA39lFVw+aS4x+zEKLPk757Hk8gqncr1Mbl/DYLZr4nKbbnURnZ+o2axVE1nVgGjVkel8FbGFUiT5DnSUTlfkaau3SN1xDV6UJepzjvsNN5FXlFXtyuSHHO8ALyMrmL0DWuKFZ1zA4iW8fR7XLYEqcgH9o7LzkYLsvMB5tBl//zk+UcLde2+UWsL1/xL3Wpq3J8U7KTNFHrknM6XDl/KHIiojrcY+zcyW6NqLKSL73zalcH6zY65V2LVijzONKtGrheg86xR23asU1cjUxbCk2r8Y4Y3OFNS0kpTuq8u9ExyXkYKeugfNGrpC03f/Gm0bNcC3sQ7ru7fVG3apPshl5xXHUkHka0ouHyURr32Ei03TTtwjl67diqbRyuuy2wJ9y1TSd4G95ynQDXuU5GfhF9+ZK7zd07bsA4dY1OUnoMvvgu/0efd+V+5M4YLF1+5ccxD+wIvWNRmTYciQ/yOJU5FrZQTS2TfMzM3GjzH24inXrwUePjszp8Z1xGzQeaLl7bOLj/7uBuIlxCyi+yidPbxj2QIeI02PfhPdStvNjKuSW3HWxuozKJj5KzU2ep0yxOmNwsdcW9Tb8hL/QuRB2tL/W4vA9d4iPgaNVO0QGdCxR1/M82Trj893pwPa3nTHJs7B+IIHrNmOoaoQAAAABJRU5ErkJggg=="> </h1>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <img class="card-img-top" src="../../assets/bridgestone.png" alt="Card image cap" style="width: 90%;">
-          </div>
-        </div>
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+        <a data-toggle="tooltip" title="firestone">
+          <img src="../../assets/firestone.png" class="img-responsive">
+        </a>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <img class="card-img-top" src="../../assets/michelin.png" alt="Card image cap" style="width: 45%;">
-          </div>
-        </div>
+
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+        <a data-toggle="tooltip" title="bridgestone">
+          <img src="../../assets/bridgestone.png" class="img-responsive">
+        </a>
+      </div>
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+        <a data-toggle="tooltip" title="michelin">
+          <img src="../../assets/michelin.png" class="img-responsive">
+        </a>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <img class="card-img-top" src="../../assets/federal.gif" alt="Card image cap">
-          </div>
-        </div>
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+        <a data-toggle="tooltip" title="federal">
+          <img src="../../assets/federal.gif" class="img-responsive">
+        </a>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <img class="card-img-top" src="../../assets/deestone.jpg" alt="Card image cap">
-          </div>
-        </div>
+
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+        <a data-toggle="tooltip" title="deestone">
+          <img src="../../assets/deestone.jpg" class="img-responsive">
+        </a>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <img class="card-img-top" src="../../assets/silverstone.gif" alt="Card image cap">
-          </div>
-        </div>
+
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+        <a data-toggle="tooltip" title="silverstone">
+          <img src="../../assets/silverstone.gif" class="img-responsive">
+        </a>
       </div>
     </div>
   </div>

@@ -6,24 +6,6 @@
      height: 100px;
  }
 
- #u3171 {
-     width: 150px;
-     height: 150px;
- }
-
- #u3171 {
-     border-style: none;
-     border-color: transparent;
-     position: relative;
-     background: transparent url("../assets/fb.png") no-repeat left top;
-     background-size: contain !important;
- }
-
- #u3171:hover {
-     background: transparent url("../assets/fb-on.png") no-repeat left top;
-     background-size: contain !important;
- }
-
  label.btn.btn-secondary:hover {
      background-color: rgba(114, 110, 110, 0.54);
  }
@@ -42,6 +24,23 @@
 
  .jumbotron {
      background-color: transparent;
+ }
+
+ .gallery-title {
+     font-size: 36px;
+     color: #42B32F;
+     text-align: center;
+     font-weight: 500;
+     margin-bottom: 70px;
+ }
+
+ .gallery-title:after {
+     content: "";
+     position: absolute;
+     width: 30%;
+     left: 35.5%;
+     height: 45px;
+     border-bottom: 1px solid #5e5e5e;
  }
 
  button.mapa {
