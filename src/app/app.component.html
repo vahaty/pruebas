@@ -2,21 +2,4 @@
 
 <router-outlet></router-outlet>
 
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h1 class="gallery-title">Localizanos
-          <span class="glyphicon glyphicon-globe"></span>
-        </h1>
-      </div>
-    </div>
-    <!-- mapa -->
-    <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" [zoomControl]="true" [mapTypeId]="tipoMapa" [fullscreenControl]="true"
-      [mapDraggable]="false">
-      <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"></agm-marker>
-    </agm-map>
-  </div>
-</div>
-
 <app-footer></app-footer>

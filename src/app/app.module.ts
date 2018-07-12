@@ -16,6 +16,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PrincipalComponent } from './principal/principal.component';
 import { FooterComponent } from './footer/footer.component';
 import { GaleriaComponent } from './galeria/galeria.component';
+import { MapaComponent } from './mapa/mapa.component';
 
 const appRoutes: Routes = [
   { path: '', component: PrincipalComponent },
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     QuienSomosComponent,
     PrincipalComponent,
     FooterComponent,
-    GaleriaComponent
+    GaleriaComponent,
+    MapaComponent
   ],
   imports: [
     RouterModule.forRoot(

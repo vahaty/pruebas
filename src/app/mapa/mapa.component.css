@@ -1,0 +1,56 @@
+agm-map {
+    height: 600px;
+}
+
+button agm-map {
+    height: 100px;
+}
+
+label.btn.btn-secondary:hover {
+    background-color: rgba(114, 110, 110, 0.54);
+}
+
+label.btn.btn-secondary.active {
+    font-weight: bold;
+}
+
+.botonesMap {
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.gallery-title {
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    left: 35.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+
+button.mapa {
+    left: 125px;
+    top: 660px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+    bottom: 0;
+}
