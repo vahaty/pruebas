@@ -1,59 +1,63 @@
-<div class="row">
-  <footer class="footer footer-home">
-    <div class="content">
-      <div class="col-md-4">
-        <div class="card">
-          <div class="circulo">
-            <img class="card-img-top " src="../assets/chatbubble.png" alt="Card image cap">
-          </div>
-          <div class="card-body">
-            <h4 class="card-title">Contacta con nosotros</h4>
-            <p class="glyphicon glyphicon-earphone">
-              <span> 617 34 48 09</span>
-            </p>
-
-            <div class="mail-send">
-              <p class="glyphicon glyphicon-envelope">
-                <span> neumaticosdiego@volluercas.net</span>
-              </p>
-            </div>
-          </div>
+<div class="container footer">
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active">
+      <a data-toggle="tab" href="#home">
+        <div class="circulo">
+          <img class="card-img-top " src="../assets/chatbubble.png" alt="Card image cap">
         </div>
-      </div>
-
-
-      <div class="col-md-4">
-        <div class="card">
-          <div class="circulo">
-            <img class="card-img-top" src="../assets/location.png" alt="Card image cap">
-          </div>
-
-          <div class="card-body">
-            <h4 class="upper title">Dónde estamos</h4>
-            <p class="foot-address">
-              <span class="address-street">Carretera de guadalupe, s/n </span>
-              <span class="address-postal-code"> 10136 </span>
-              <span class="address-locality"> Cañamero </span>
-            </p>
-            <a class="link-theme" href="/es/contacto/">localizanos</a>
-            <div class="social-data" data-website-social-data=""></div>
-          </div>
+      </a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#menu1">
+        <div class="circulo">
+          <img class="card-img-top" src="../assets/location.png" alt="Card image cap">
         </div>
-      </div>
+      </a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#menu2">
+        <div class="circulo">
+          <img class="card-img-top" src="../assets/reloj.png" alt="Card image cap">
+        </div>
+      </a>
+    </li>
+  </ul>
 
-      <div class="col-md-4">
-        <div class="card">
-          <div class="circulo">
-            <img class="card-img-top" src="../assets/reloj.png" alt="Card image cap">
-          </div>
-          <div class="card-body">
-            <h4 class="upper title">Horarios</h4>
-            <div class="tab-desc">
-              <div class="opening-hours">
-                <p>De 9 a 14 y de 16 a 20 horas.</p>
-              </div>
-            </div>
-          </div>
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active">
+      <br>
+      <br>
+      <h4 class="card-title ">Contacta con nosotros</h4>
+      <p class="glyphicon glyphicon-earphone">
+        <span> 617 34 48 09</span>
+      </p>
+      <div class="mail-send">
+        <p class="glyphicon glyphicon-envelope">
+          <span> neumaticosdiego@volluercas.net</span>
+        </p>
+      </div>
+    </div>
+    <div id="menu1" class="container tab-pane fade">
+      <br>
+      <br>
+      <h4 class="upper title">Dónde estamos</h4>
+      <p class="foot-address">
+        <span class="address-street">Carretera de guadalupe, s/n </span>
+        <span class="address-postal-code"> 10136 </span>
+        <span class="address-locality"> Cañamero </span>
+      </p>
+      <a class="link-theme" href="/es/contacto/">localizanos</a>
+      <div class="social-data" data-website-social-data=""></div>
+    </div>
+    <div id="menu2" class="container tab-pane fade">
+      <br>
+      <br>
+      <h4 class="title">Horarios</h4>
+      <div class="tab-desc">
+        <div class="opening-hours">
+          <p>De 9 a 14 y de 16 a 20 horas.</p>
         </div>
       </div>
     </div>
+  </div>
+</div>

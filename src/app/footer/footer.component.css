@@ -1,23 +1,68 @@
-img.card-img-top {
-    width: 50%;
-    margin-top: 35%;
+.nav>li>a, .nav>li>a:hover, .nav>li>a:focus {
+    background-color: #eee;
+    cursor: default;
 }
 
-.card {
+.tab-content {
+    color: white;
+    background-color: black;
     text-align: center;
 }
 
-.row {
-    background-color: #1b1e28;
-    color: #ededed;
+ul.nav.nav-tabs.nav-justified {
+    display: flex;
+}
+
+img.card-img-top {
+    width: 30%;
 }
 
 .circulo {
-    border-radius: 50%;
-    background: white;
     width: 100px;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -55px;
+    background-color: #eee;
+}
+
+li.active, li.active:hover {
+    background-color: chartreuse;
+}
+
+@media screen and (min-width: 750px) {
+    .tab-content>.tab-pane {
+        display: table-cell;
+    }
+    .fade {
+        opacity: 1;
+        transition: opacity .15s linear;
+    }
+    ul.nav.nav-tabs.nav-justified {
+        display: -webkit-box;
+    }
+    img.card-img-top {
+        width: 50%;
+        margin-top: 35%;
+    }
+    div#exTab1 {
+        background-color: black;
+    }
+    li.active, li.active:hover {
+        background-color: black;
+    }
+    .nav[_ngcontent-c2]>li[_ngcontent-c2]>a[_ngcontent-c2], .nav[_ngcontent-c2]>li[_ngcontent-c2]>a[_ngcontent-c2]:hover, .nav[_ngcontent-c2]>li[_ngcontent-c2]>a[_ngcontent-c2]:focus {
+        background-color: black;
+        cursor: default;
+        border: 0 solid;
+    }
+    .container.footer[_ngcontent-c2] {
+        background: black;
+    }
+    .circulo {
+        margin-bottom: -15%;
+        border-radius: 50%;
+        background: white;
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -55px;
+    }
 }
