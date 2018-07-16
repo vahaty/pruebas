@@ -1,0 +1,66 @@
+.soni {
+    background: url('../../assets/neumatico-ecologico.jpg') no-repeat center center;
+}
+
+.gallery-title {
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+label {
+    font-size: 17px;
+    font-family: monospace;
+}
+
+.neumatico {
+    width: 25%;
+}
+
+.icon {
+    width: 3%;
+}
+
+img {
+    width: 60%;
+}
+
+img.eco-noise-3 {
+    width: 44%;
+}
+
+[class^=eco-noise] {
+    background-color: white;
+    border: 1px solid #0059e5;
+    color: #0059e5;
+}
+
+.eco-adherence.c {
+    background-color: white;
+    border: 1px solid #cbdb37;
+    color: #cbdb37;
+}
+
+button.btn.btn-success.btn-lg.btn-block[_ngcontent-c4] {
+    width: 60%;
+}
+
+img.eco-adherence2, img.eco-carburant2 {
+    width: 44%;
+    border: 1px solid;
+}
+
+.flag {
+    width: 10%;
+    height: 15px;
+    position: relative;
+    background: #FFDD29;
+}
+
+.eco-carburant {
+    color: #ffc60e;
+    background-color: white;
+    border: 1px solid #ffc60e;
+}

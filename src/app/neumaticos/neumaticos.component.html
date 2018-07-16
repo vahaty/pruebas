@@ -1,0 +1,156 @@
+<div class="row">
+  <div class="jumbotron soni">
+    <div class="container ">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-head">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h1 class="gallery-title">ENCUENTRA TUS NEUMÁTICOS</h1>
+            </div>
+          </div>
+          <div class="card-body ">
+            <div class="row" style="margin-left: 15px;">
+              <div class="col-md-2">
+                <div class="input-group">
+                  <label>Anchura* </label>
+                  <select [(ngModel)]="anc" class="form-control">
+                    <option *ngFor="let c of anchura" [ngValue]="c">{{c.value}}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="input-group">
+                  <label> Altura* </label>
+                  <select [(ngModel)]="alt" class="form-control">
+                    <option *ngFor="let c of altura" [ngValue]="c">{{c.value}}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="input-group">
+                  <label>Diámetro*</label>
+                  <select [(ngModel)]="dia" class="form-control">
+                    <option *ngFor="let c of diametro" [ngValue]="c">{{c.value}}</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="../assets/neumatico.webp" alt="Card image cap" />
+            <button class="btn btn-success  btn-lg btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              (click)=search()>
+              Buscar neumáticos
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container">
+  <div class="panel panel-info" *ngFor="let neuma of ver">
+    <div class="panel-heading">
+      <h4 class="text-uppercase col-md-10">{{neuma.modelo}}
+
+      </h4>
+      <label>
+        <strong>{{neuma.precio}} Euro</strong>
+      </label>
+
+    </div>
+    <div class="panel-body">
+
+
+      <div class="row">
+        <img style=" width: 20%;" src='../../assets/duraturn/duraturn.jpg' />
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <img class="neumatico" src={{neuma.imagen}} alt="Card image cap" />
+        </div>
+
+
+        <div class="col-md-8">
+          <div class="row">
+            <div class="form-group">
+              <label>Marca: </label>
+              <span>{{neuma.marca}}</span>
+            </div>
+            <div class="form-group">
+              <label>Modelo: </label>{{neuma.modelo}}
+            </div>
+            <div class="form-group">
+              <label>Tamaño: </label>{{neuma.marca}}
+            </div>
+          </div>
+          <div class="row" style="display: inline-flex">
+
+            <div class="col-md-4" title="Resistencia a la rodadura">
+              <div class="eco-carburant e">
+                <img class="eco-carburant2" src="https://png.icons8.com/color/50/000000/gas-station.png">
+                <span> {{neuma.resistencia}}</span>
+              </div>
+            </div>
+
+            <div class="col-md-4" title="Frenada sobre suelo mojado">
+              <div class="eco-adherence c">
+                <img class="eco-adherence2 c" src="https://png.icons8.com/ultraviolet/50/000000/rain.png">
+                <span> {{neuma.frenada}}</span>
+              </div>
+            </div>
+
+            <div class="col-md-4" title="Nivel sonoro externo">
+              <div class="eco-noise-2">
+                <img class="eco-noise-3" src="https://png.icons8.com/nolan/50/000000/medium-volume.png">
+                <span> {{neuma.nivelSonoro}}</span> db</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+      <hr class="my-4">
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- 
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let neuma of ver">
+      <th scope="row">1</th>
+      <td>{{neuma.marca}}</td>
+      <td>{{neuma.precio}}</td>
+      <td>{{neuma.modelo}}</td>
+      <td>
+        <img src={{neuma.imagen}} alt="Card image cap" />
+      </td>
+
+      <td>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL8SURBVGhD1dpLyA1hHMfx17VYkIREQqLERilKlESyUCIblpSULFAWLu/GJQuFlJBrKYVEUkgslJIoEtmIhVySjUuu31+a+s8z/xnnPee85/zPrz6leWaeOT+8M3PmebsqMhWn8Aa/8KdBP/EaxzEZLclqfIf3gZrhK5ajVzMLP+B9gGbSX9RM9FruwJ7wGx7hQYM0R/qvfAM2EzHh3x8byzDYn4ePmIRmZQo+IZtfPzdDoOzCb+j8O7ShkcxAdhI5gWbnNOw5dFFR3sNu70bdmQM72WE0O5rTnmM6lCuw22U76ko7i4zAU9gx2Yoep51FlFF4Bjsum9CjtLuIMhrPYfeRjag5EYooY/ACdj9d0TagpkQpoozFS9h9VWYt/ptIRRQ9Zdh9RfeeZahMtCIas/tm9IQwH6XplCLyAaWPM51URB5iAArptCLiXpbTIhfQ7FyGPUdVkWmw+3reoi9ySYvoCrEGI6En40ZojnVIv21WFdExdt8yhTnSIq1QVUTx7vKpRcglYpFV8I6zCpfiiEWUI/COzehz5xK1SD+cgXe8dEwRRWWOwZsjRBF9cVqBJRiPqvTBIaRzhCiSuo+5KIvKnIc9JmQR0UPhQpRlN+z+YYuI7h/ucxQJWeQA9uAk9Lhhx5bCS8gi9qq1EnZsL7yELzIOduwivIQvotenduwmvIQvotgxXYq97IfdL3yRJ9rg5CjsfrORS4QiWgTKxl5pg5NzqJojRJF3yMa0BOHlKuwchaWPCEXsu1+tnHm5CzvHUOQSocgt2HF93U1j30B+0YY0EYqkb1nmwWYQ9C4hG9eyXiERiuhlhx3fBhs9TNpxd1UtQpH07q7/RgORJX2E13eZQiIUUe7B7nMNWvs/aLbJZ2SLqblEKaLXO96+qZ1wE6WIkq7+ph5jMNxEKtIf+5D+koEWey5hOHLR68wt0Jebs7AHtYJ+yUbn3ozCjY1otXcx1kMLPPrtCDe34Z2gHa6j7tibS7uVPZLUFG/Cdqo7C4KpI11dfwFLAXfjoIvlOQAAAABJRU5ErkJggg==">
+      </td>
+    </tr>
+  </tbody>
+</table> -->

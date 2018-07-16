@@ -17,11 +17,13 @@ import { PrincipalComponent } from './principal/principal.component';
 import { FooterComponent } from './footer/footer.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { MapaComponent } from './mapa/mapa.component';
+import { NeumaticosComponent } from './neumaticos/neumaticos.component';
 
 const appRoutes: Routes = [
   { path: '', component: PrincipalComponent },
   { path: 'nosotros', component: QuienSomosComponent },
   { path: 'galeria', component: GaleriaComponent },
+  { path: 'neumaticos', component: NeumaticosComponent },
 ];
 
 @NgModule({
@@ -33,12 +35,13 @@ const appRoutes: Routes = [
     PrincipalComponent,
     FooterComponent,
     GaleriaComponent,
-    MapaComponent
+    MapaComponent,
+    NeumaticosComponent
   ],
   imports: [
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: true }
     ),
     BrowserModule,
     CommonModule,
