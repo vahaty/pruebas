@@ -36,7 +36,7 @@ const appRoutes: Routes = [
     FooterComponent,
     GaleriaComponent,
     MapaComponent,
-    NeumaticosComponent
+    NeumaticosComponent,
   ],
   imports: [
     RouterModule.forRoot(

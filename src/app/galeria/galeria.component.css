@@ -25,6 +25,20 @@ img.img-responsive.contenedor {
     border-bottom: 1px solid #5e5e5e;
 }
 
+img.img-responsive.carousel {
+    display: -webkit-inline-box;
+    width: 80%;
+    padding: 0 0 20px 0px;
+}
+
+.carousel-indicators .active {
+    background-color: #42B32F;
+}
+
+.carousel-indicators li {
+    border: 1px solid green;
+}
+
 .filter-button {
     font-size: 18px;
     border: 1px solid #42B32F;
@@ -54,6 +68,11 @@ img.img-responsive.contenedor {
 
 .gallery_product {
     margin-bottom: 30px;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: none;
 }
 
 /* --------------- */
@@ -116,35 +135,6 @@ img.img-responsive.contenedor {
 
 .modal-open .gal-item .modal-body {
     padding: 0px;
-}
-
-button.close {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background-color: #000;
-    opacity: 1;
-    color: #fff;
-    z-index: 999;
-    right: -12px;
-    top: -12px;
-    border-radius: 50%;
-    font-size: 15px;
-    border: 2px solid #fff;
-    line-height: 25px;
-    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.35);
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.35);
-}
-
-.modal-open button.close:focus {
-    outline: none;
-}
-
-button.close {
-    position: relative;
-    top: -3px;
-    font-weight: lighter;
-    text-shadow: none;
 }
 
 img.modalImg {
