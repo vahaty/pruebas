@@ -1,61 +1,64 @@
 <!-- <img style="-webkit-user-select: none;" src="../../assets/preloader.GIF"> -->
 
 <div class="container text-center">
-    <div class="modal fade" id="1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header ">
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span aria-hidden="true">×</span>
-                        <span class="sr-only">Close</span>
-                    </button>
-                </div>
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li *ngFor="let slide of slides" data-target="#1" (click)="indicadores(slide.id)" [attr.data-slide-to]="slide.id" [ngClass]="{'active': slide.active}"></li>
-                    </ol>
 
-                    <div class="carousel-inner" *ngFor="let slide of slides" [id]="slide.id">
-                        <div class="item " [ngClass]="{'active': slide.active}">
-                            <img class="img-responsive carousel" [src]="slide.src">
-                        </div>
+    <div class="row">
+        <div class="modal fade" id="1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only">Close</span>
+                        </button>
                     </div>
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li *ngFor="let slide of slides" data-target="#1" (click)="indicadores(slide.id)" [attr.data-slide-to]="slide.id" [ngClass]="{'active': slide.active}"></li>
+                        </ol>
 
-                    <!-- Controls -->
-                    <a class="left carousel-control" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" (click)="previous()"></span>
-                    </a>
-                    <a class="right carousel-control" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" (click)="next()"></span>
-                    </a>
+                        <div class="carousel-inner" *ngFor="let slide of slides" [id]="slide.id">
+                            <div class="item " [ngClass]="{'active': slide.active}">
+                                <img class="img-responsive carousel" [src]="slide.src">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" (click)="previous()"></span>
+                        </a>
+                        <a class="right carousel-control" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" (click)="next()"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1 class="gallery-title">Gallery</h1>
-        </div>
-        <br/>
-
-        <!-- fotos -->
-        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe" *ngFor="let slide of slides">
-            <div class="active item" data-slide-number="0">
-                <a data-toggle="modal" data-target="#1" [title]="slide.title">
-                    <img [src]="slide.src" class="img-responsive contenedor"> </a>
+    <div class="container">
+        <div class="row">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="gallery-title">Gallery</h1>
             </div>
-        </div>
+            <br/>
 
-        <!-- video -->
-        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-            <a data-toggle="modal" data-target="#7" title="CORGHI EM9580 LaserlLine Wheel Balancer (DE)">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Qm11n7HucJ0" allowfullscreen></iframe>
+            <!-- fotos -->
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe" *ngFor="let slide of slides">
+                <div class="active item" data-slide-number="0">
+                    <a data-toggle="modal" data-target="#1" [title]="slide.title">
+                        <img [src]="slide.src" class="img-responsive contenedor"> </a>
                 </div>
-            </a>
+            </div>
+
+            <!-- video -->
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <a data-toggle="modal" data-target="#7" title="CORGHI EM9580 LaserlLine Wheel Balancer (DE)">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Qm11n7HucJ0" allowfullscreen></iframe>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </div>

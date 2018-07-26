@@ -39,7 +39,7 @@
           </div>
           <div class="card-body">
             <img src="../assets/neumatico.webp" alt="Card image cap" />
-            <button class="btn btn-success  btn-lg btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            <button class="btn btn-success  btn-md btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
               (click)=search()>
               Buscar neumáticos
             </button>
@@ -82,12 +82,8 @@
             <div class="form-group">
               <label>Marca: </label>
               <span>{{neuma.marca}}</span>
-
-
-              <button class="btn btn-success btn-md">
-                <!-- <img src="https://png.icons8.com/office/80/000000/add-property.png"> -->
-                <span>+INFO</span>
-              </button>
+              <button type="button" class="btn btn-info btn-sm btn3d">
+                <span class="glyphicon glyphicon-question-sign"></span> Info</button>
             </div>
             <div class="form-group">
               <label>Modelo: </label>{{neuma.modelo}}

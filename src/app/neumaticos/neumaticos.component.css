@@ -1,66 +1,71 @@
 .soni {
-    background: url('../../assets/neumatico-ecologico.jpg') no-repeat center center;
+	background: url('../../assets/neumatico-ecologico.jpg') no-repeat center center;
 }
 
 .gallery-title {
-    font-size: 36px;
-    color: #42B32F;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 70px;
+	font-size: 36px;
+	color: #42B32F;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 70px;
 }
 
 label {
-    font-size: 17px;
-    font-family: monospace;
+	font-size: 17px;
+	font-family: monospace;
+}
+
+.btn-info {
+	box-shadow: 0 0 0 1px #5bc0de inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #46b8da, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+	background-color: #5bc0de;
 }
 
 .neumatico {
-    width: 25%;
+	width: 25%;
 }
 
 .icon {
-    width: 3%;
+	width: 3%;
 }
 
 img {
-    width: 60%;
+	width: 60%;
 }
 
 img.eco-noise-3 {
-    width: 44%;
+	width: 44%;
 }
 
 [class^=eco-noise] {
-    background-color: white;
-    border: 1px solid #0059e5;
-    color: #0059e5;
+	background-color: white;
+	border: 1px solid #0059e5;
+	color: #0059e5;
 }
 
 .eco-adherence.c {
-    background-color: white;
-    border: 1px solid #cbdb37;
-    color: #cbdb37;
+	background-color: white;
+	border: 1px solid #cbdb37;
+	color: #cbdb37;
 }
 
-button.btn.btn-success.btn-lg.btn-block[_ngcontent-c4] {
-    width: 60%;
+.btn-block {
+	width: 60%;
 }
 
 img.eco-adherence2, img.eco-carburant2 {
-    width: 44%;
-    border: 1px solid;
+	width: 44%;
+	border: 1px solid;
 }
 
 .flag {
-    width: 10%;
-    height: 15px;
-    position: relative;
-    background: #FFDD29;
+	width: 10%;
+	height: 15px;
+	position: relative;
+	background: #FFDD29;
 }
 
 .eco-carburant {
-    color: #ffc60e;
-    background-color: white;
-    border: 1px solid #ffc60e;
+	color: #ffc60e;
+	background-color: white;
+	border: 1px solid #ffc60e;
 }

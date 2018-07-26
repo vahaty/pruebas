@@ -27,3 +27,7 @@
     height: 45px;
     border-bottom: 1px solid #5e5e5e;
 }
+
+.jumbotron {
+    background-color: #dbf7fd30;
+}

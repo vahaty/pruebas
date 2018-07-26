@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  public activar: number;
   constructor() { }
 
   ngOnInit() {
+    this.activar = 0;
   }
 
+  cambiar(value) {
+    this.activar = value;
+  }
 }

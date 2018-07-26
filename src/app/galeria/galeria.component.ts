@@ -51,19 +51,7 @@ export class GaleriaComponent implements OnInit {
         src: '../../assets/MontadoraIndustriales.JPG',
         active: false,
         title: 'Montadora Industriales'
-      },
-      {
-        id: 7,
-        src: 'http://fakeimg.pl/365x365/',
-        active: false,
-        title: 'Alineado de Direcciones'
-      },
-      {
-        id: 8,
-        src: 'http://fakeimg.pl/365x365/',
-        active: false,
-        title: 'Alineado de Direcciones'
-      },
+      }
     ];
     this.id = 0;
   }

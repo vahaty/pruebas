@@ -18,12 +18,14 @@ import { FooterComponent } from './footer/footer.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { MapaComponent } from './mapa/mapa.component';
 import { NeumaticosComponent } from './neumaticos/neumaticos.component';
+import { ItvComponent } from './itv/itv.component';
 
 const appRoutes: Routes = [
   { path: '', component: PrincipalComponent },
   { path: 'nosotros', component: QuienSomosComponent },
   { path: 'galeria', component: GaleriaComponent },
   { path: 'neumaticos', component: NeumaticosComponent },
+  { path: 'itv', component: ItvComponent }
 ];
 
 @NgModule({
@@ -37,6 +39,7 @@ const appRoutes: Routes = [
     GaleriaComponent,
     MapaComponent,
     NeumaticosComponent,
+    ItvComponent,
   ],
   imports: [
     RouterModule.forRoot(

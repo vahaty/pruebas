@@ -2,25 +2,30 @@
     background-color: #080808;
 }
 
-#u3171 {
-    width: 35px;
-    height: 30px;
-    margin-top: -4px;
+body {
+    padding-top: 20px;
 }
 
-img {
-    width: 35%;
+#myCarousel .nav a small {
+    display: block;
 }
 
-#u3171 {
-    border-style: none;
-    border-color: transparent;
-    position: relative;
-    background: transparent url("../../assets/fb.png") no-repeat left top;
-    background-size: contain !important;
+#myCarousel .nav {
+    background: #eee;
 }
 
-#u3171:hover {
-    background: transparent url("../../assets/fb-on.png") no-repeat left top;
-    background-size: contain !important;
+.nav-justified>li>a {
+    border-radius: 0px;
+}
+
+.nav-pills>li.dropdown[data-slide-to="0"].active a.dropdown-toggle {
+    background-color: #270965;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+    background-color: #270965;
+}
+
+ul.dropdown-menu {
+    width: 100%;
 }

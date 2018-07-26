@@ -13,6 +13,33 @@ ul.nav.nav-tabs.nav-justified {
     display: flex;
 }
 
+#u3171 {
+    border-style: none;
+    border-color: transparent;
+    position: relative;
+    background: transparent url("../../assets/fb.png") no-repeat left top;
+    background-size: contain !important;
+}
+
+#u3171:hover {
+    background: transparent url("../../assets/fb-on.png") no-repeat left top;
+    background-size: contain !important;
+}
+
+#u3171 {
+    width: 35px;
+    height: 30px;
+    margin-top: -4px;
+}
+
+img {
+    width: 35%;
+}
+
+.row {
+    text-align: center;
+}
+
 img.card-img-top {
     width: 30%;
 }
