@@ -58,6 +58,7 @@ button.mapa {
 
 
 #return-to-top {
+    position: fixed;
     float: right;
 	overflow: hidden;
 	text-align: center;
